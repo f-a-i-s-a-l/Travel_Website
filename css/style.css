@@ -1,0 +1,18 @@
+/* 
+    Imported Fonts 
+    font-family: 'Montserrat', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    /* box-sizing makes it so that if I add padding to a box, the size remains same
+        and the padding doesn't affect the size of the box */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
