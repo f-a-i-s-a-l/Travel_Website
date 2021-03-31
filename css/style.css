@@ -105,8 +105,13 @@ body{
 .header-content a{
     font-size: 1.7rem;
     margin-top: 2rem;
+    transition: all .2s linear 0s;
 }
 
+.header-content a:hover{
+    background-color: #e63946;
+    color: #f4f4f4;
+}
 
 
 
@@ -179,4 +184,5 @@ other utility classes will define the design properties */
 .btn-primary{
     background-color: #f4f4f4;
     border-radius: 30rem;
+    border: 2px solid #e63946;
 }
