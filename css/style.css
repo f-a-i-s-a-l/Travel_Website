@@ -1,8 +1,10 @@
+/* ######################## SETTING UP THE STAGE ###################### */
 /* 
     Imported Fonts 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; (weights: 300, 400, 600, 800)
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
 
 *{
     margin: 0;
@@ -13,6 +15,109 @@
     box-sizing: border-box;
 }
 
+html{
+    /* This helps in creating responsive pages as the font-size willl vary according
+    to the device's original font-size  */
+    font-size: 50%;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ######################### HEADER SECTION ############################### */
+
+.header{
+    height: 97.5vh;
+    background: linear-gradient(rgba(0,0,0,.5), 
+                                rgba(0,0,0,.5)) ,  
+             url('../img/city.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------- Navigation Bar ------------------------------- */
+
+.header .navbar{
+    padding: 2rem;
+}
+
+.header .navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* LOGO */
+
+.header .navbar .logo{
+    font-size: 3rem;
+    float: left;
+    width: 25%;
+}
+
+/* NAVIGATION BAR LIST */
+
+.header .navbar .nav-list{
+    float: right;
+    width: auto;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.header .navbar .nav-list .nav-item{
+    float: left;
+    width: auto;
+}
+
+.header .navbar .nav-list .nav-item a{
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem;
+    text-decoration: none;
+    padding-bottom: .3rem;
+}
+
+.header .navbar .nav-list .nav-item a:hover{
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* ###################### UTILITY CLASSES ######################### */
+
+/* Font-Color classes */
+.white{
+    color: #f4f4f4;
+}
+.red{
+    color: #e63946;
+}
+.black{
+    color: #333;
+}
+.gray{
+    color: #555;
+}
+
+/* container class : specifies the width of the contents */
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Font-weight classes */
+.font-Thin{
+    font-weight: 300;
+}
+.font-Normal{
+    font-weight: 400;
+}
+.font-Bold{
+    font-weight: 600;
+}
+.font-ExtraBold{
+    font-weight: 800;
 }
