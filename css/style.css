@@ -103,19 +103,92 @@ body{
 }
 
 .header-content a{
-    font-size: 1.7rem;
     margin-top: 2rem;
     transition: all .2s linear 0s;
 }
 
-.header-content a:hover{
-    background-color: #e63946;
-    color: #f4f4f4;
+
+
+
+/* ####################### SHOWCASE SECTION ############################## */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
 }
 
+.row{
+    height: 35rem;
+    box-shadow: 0 .5rem 1rem rgb(110, 108, 108);
+}
 
+.row1{
+    margin-bottom: 10rem;
+}
 
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
 
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .img-box img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row .text-box{
+    height: 100%;
+    padding: 5rem;
+    background-color: white;
+}
+
+.row .text-box h1{
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+
+.row .text-box p{
+    font-size: 1.8rem;
+    margin-bottom: .5em;
+}
+
+.row1 .img-box{
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+    position: relative;
+}
+
+.row1 .img-box h1,
+.row2 .img-box h1{
+    color: #ddd;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 2rem;
+    text-shadow: .5rem .5rem .5rem black;
+}
+
+.row2 .img-box{
+    position: relative;
+}
+
+.row1 .img-box h1{
+    text-align: right;
+    right: 2rem;
+}
+.row2 .img-box h1{
+    text-align: left;
+    left: 2rem;
+}
 
 
 
@@ -138,6 +211,9 @@ body{
 }
 .gray{
     color: #555;
+}
+.red-dark{
+    color: #b81623;
 }
 
 
@@ -181,8 +257,33 @@ other utility classes will define the design properties */
     text-decoration: none;
 }
 
+.unselectable{
+    /* disable selection of text */
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select:none; 
+    user-select:none;
+    -o-user-select:none;
+}
+
 .btn-primary{
     background-color: #f4f4f4;
+    font-size: 1.7rem;
     border-radius: 30rem;
     border: 2px solid #e63946;
+}
+.btn-primary:hover{
+    background-color: #e63946;
+    color: #f4f4f4;
+}
+
+.btn-secondary{
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 20rem;
+    border: 2px solid #b81623;
+}
+.btn-secondary:hover{
+    background-color: #b81623;
+    color: #f4f4f4;
 }
