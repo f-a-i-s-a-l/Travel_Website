@@ -122,7 +122,13 @@ body{
     box-shadow: 0 .5rem 1rem rgb(110, 108, 108);
 }
 
-.row1{
+/* Clear Floats on div */
+.row::after{
+    content: '';
+    clear: both;
+}
+
+.row1, .row2{
     margin-bottom: 10rem;
 }
 
@@ -164,7 +170,6 @@ body{
 }
 
 .row1 .img-box{
-    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
     position: relative;
 }
 
