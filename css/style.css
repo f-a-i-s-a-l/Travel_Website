@@ -95,7 +95,7 @@ body{
     background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
 }
 
-.header-content .large-heading{
+.header-content .main-heading{
     font-size: 5rem;
 }
 .header-content .content-para{
@@ -125,6 +125,7 @@ body{
 /* Clear Floats on div */
 .row::after{
     content: '';
+    display: block;
     clear: both;
 }
 
@@ -176,7 +177,6 @@ body{
 .row1 .img-box h1,
 .row2 .img-box h1{
     color: #ddd;
-    font-size: 3rem;
     position: absolute;
     bottom: 2rem;
     text-shadow: .5rem .5rem .5rem black;
@@ -196,10 +196,62 @@ body{
 }
 
 
+/* ####################### FEATURES SECTION ######################### */
+.features{
+    background-color: #fff;
+    padding: 10rem 0;
+}
+.box-wrapper{
+    box-shadow: 0 .5rem 1.5rem rgb(103, 94, 94);
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box{
+    width: 33.333333333333333%;
+    float: left;
+    padding: 3rem 5rem;
+    text-align: center;
+}
+
+.box .fas{
+    margin-bottom: 1rem;
+}
+.box h2, .box p{
+    margin-bottom: .5em;
+}
+.box p{
+    font-size: 1.5rem;
+}
+
+.box1{
+    background: linear-gradient(to top, #0f0c29, #302b63); 
+}
+.box2{
+    background: linear-gradient(to bottom, #cb356b, #bd3f32);
+}
 
 
+/* ##################### FOOTER ############################### */
+.footer{
+    background-color: #333;
+    padding: 5rem 0;
+    text-align: center;
+}
 
+.footer .social-links{
+    margin-bottom: 2rem;
+}
 
+.footer .social-links .fab{
+    margin: 0 1rem;
+}
+.footer .social-links .fab:hover{
+    color: #888;
+}
 
 
 /* ###################### UTILITY CLASSES ######################### */
@@ -230,7 +282,7 @@ body{
 }
 
 
-/* Font-weight classes */
+/* Font-weight and size classes */
 .font-Thin{
     font-weight: 300;
 }
@@ -244,6 +296,12 @@ body{
     font-weight: 800;
 }
 
+.med-heading{
+    font-size: 2rem;
+}
+.lg-heading{
+    font-size: 3rem;
+}
 /* Casing classes */
 .upperCase{
     text-transform: uppercase;
