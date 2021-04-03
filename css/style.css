@@ -95,9 +95,10 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+    width: 70%;
 }
 
-.header-content .main-heading{
+.main-heading{
     font-size: 5rem;
 }
 .header-content .content-para{
@@ -200,9 +201,6 @@ body{
 .features{
     padding: 10rem 0;
 }
-.box-wrapper{
-    box-shadow: 0 .5rem 1.5rem rgb(103, 94, 94);
-}
 .box-wrapper::after{
     content: '';
     display: block;
@@ -214,6 +212,7 @@ body{
     float: left;
     padding: 3rem 5rem;
     text-align: center;
+    box-shadow: .5rem .5rem 1.5rem rgb(118, 113, 113);
 }
 
 .box .fas{

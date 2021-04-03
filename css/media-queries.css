@@ -1,0 +1,95 @@
+/* ################# MAX WIDTH: 500 PX ###################### */
+@media (max-width: 500px){
+
+    /* ------------------- Change the Root font-size ------------------- */
+    html{
+        font-size: 7px;
+    }
+    /* ##################### HOME PAGE ################################# */
+
+    /* ------------------ HEADER SECTION ------------------------------- */
+
+    /* Navigation Bar */
+    .navbar .logo, .navbar .nav-list{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .nav-list .nav-item{
+        float: none;
+        display: block;
+    }
+    /* Hide Content Para */
+    .header-content .content-para{
+        display: none;
+    }
+
+    /* --------------- SHOWCASE SECTION ------------------------------ */
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row .img-box h1{
+        display: none;
+    }
+
+    /* --------------- FEATURES SECTION --------------------------- */
+    .box{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .box1, .box2{
+        margin-top: 2rem;
+    }
+    /* ------------ UTILITY CLASSES -------------------------------- */
+    .main-heading{
+        font-size: 4rem;
+    }
+    .small-size{
+        font-size: 1.2rem;
+    }
+    .med-size{
+        font-size: 2rem;
+    }
+    .lg-size{
+        font-size: 3rem;
+    }
+
+    /* ###################### ABOUT US PAGE ###################### */
+    .banner-ad, .banner-btn{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-btn a{
+        width: 100%;
+        border: 2px solid white;
+        border-radius: 2em;
+    }
+
+    /* ################### CONTACT US PAGE ###################### */
+    .location, .form{
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .form-btn{
+        padding: .5rem;
+        font-size: 2rem;
+        width: 50%;
+    }
+
+}
