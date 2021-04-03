@@ -162,12 +162,10 @@ body{
 }
 
 .row .text-box h1{
-    font-size: 3rem;
     margin-bottom: .5em;
 }
 
 .row .text-box p{
-    font-size: 1.8rem;
     margin-bottom: .5em;
 }
 
@@ -323,10 +321,12 @@ body{
 }
 .banner-ad{
     float: left;
+    width: 60%;
     padding: 2rem 3rem;
 }
 .banner-btn{
     float: right;
+    width: 40%;
 }
 .banner-btn a{
     display: inline-block;
@@ -335,6 +335,8 @@ body{
     border-radius: .5em;
     padding: 2rem 3rem;
     transition: all .2s ease-in-out;
+    margin: .5em 0;
+    width: 100%;
 }
 .banner-btn a:hover{
     color: #e63946;

@@ -51,20 +51,7 @@
     .box1, .box2{
         margin-top: 2rem;
     }
-    /* ------------ UTILITY CLASSES -------------------------------- */
-    .main-heading{
-        font-size: 4rem;
-    }
-    .small-size{
-        font-size: 1.2rem;
-    }
-    .med-size{
-        font-size: 2rem;
-    }
-    .lg-size{
-        font-size: 3rem;
-    }
-
+    
     /* ###################### ABOUT US PAGE ###################### */
     .banner-ad, .banner-btn{
         float: none;
@@ -77,7 +64,7 @@
         border: 2px solid white;
         border-radius: 2em;
     }
-
+    
     /* ################### CONTACT US PAGE ###################### */
     .location, .form{
         float: none;
@@ -92,4 +79,85 @@
         width: 50%;
     }
 
+
+    /* #################### UTILITY CLASSES ####################*/
+    .main-heading{
+        font-size: 4rem;
+    }
+    .small-size{
+        font-size: 1.2rem;
+    }
+    .med-size{
+        font-size: 2rem;
+    }
+    .lg-size{
+        font-size: 3rem;
+    }
+
+}
+
+/* ####################### MAX WIDTH: 768 PX ###################### */
+@media (max-width: 768px) and (min-width: 501px){
+    /* ------------------- Change the Root font-size ------------------- */
+    html{
+        font-size: 9px;
+    }
+    /* ##################### HOME PAGE ################################# */
+    
+    /* --------------- FEATURES SECTION --------------------------- */
+    .box{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .box1, .box2{
+        margin-top: 2rem;
+    }
+    
+    /* ################### CONTACT US PAGE ###################### */
+    .location, .form{
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .form-btn{
+        padding: .5rem;
+        font-size: 2rem;
+        width: 50%;
+    }
+    
+    
+    /* #################### UTILITY CLASSES ########################### */
+    .main-heading{
+        font-size: 4rem;
+    }
+    .small-size{
+        font-size: 1.5rem;
+    }
+    .med-size{
+        font-size: 2rem;
+    }
+    .lg-size{
+        font-size: 2.5rem;
+    }
+}
+
+/* ####################### MAX WIDTH: 1024 PX ###################### */
+@media (max-width: 1024px) and (min-width: 769px){
+     /* ################### CONTACT US PAGE ###################### */
+     .location, .form{
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .form-btn{
+        padding: .5rem;
+        font-size: 2rem;
+        width: 50%;
+    }
 }
